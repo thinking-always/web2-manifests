@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: web2-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: <https://github.com/thinking-always/web2-manifests.git>
+    targetRevision: main
+    path: overlays/dev
+  destination:
+    server: <https://kubernetes.default.svc>
+    namespace: web2-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
