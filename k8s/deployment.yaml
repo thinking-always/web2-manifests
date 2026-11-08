@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: web2
-        image: ghcr.io/thinking-always/web2-app:a61d7d89e5e13e584ce7fcbd4f4187f993e57b4f
+        image: ghcr.io/thinking-always/web2-app:8763c3d81f4d21d64bb4272b5db8c324236a4111
         ports:
         - containerPort: 80
