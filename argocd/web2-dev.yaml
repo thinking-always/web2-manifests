@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: <https://github.com/thinking-always/web2-manifests.git>
+    repoURL: https://github.com/thinking-always/web2-manifests.git
     targetRevision: main
     path: overlays/dev
   destination:
