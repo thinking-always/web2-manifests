@@ -1,13 +1,17 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../base
+- ../../base
 namespace: web2-dev
 patches:
-  - target:
-      kind: Ingress
-      name: web2
-    patch: |-
-      - op: replace
-        path: /spec/rules/0/host
-        value: web2-dev.localhost
+- patch: |-
+    - op: replace
+      path: /spec/rules/0/host
+      value: web2-dev.localhost
+  target:
+    kind: Ingress
+    name: web2
+images:
+- name: ghcr.io/thinking-always/web2-app
+  newName: ghcr.io/thinking-always/web2-app
+  newTag: 6a36134397d35de746da36384642edffae5a58a4
