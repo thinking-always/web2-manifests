@@ -10,7 +10,7 @@ spec:
     targetRevision: main
     path: overlays/prod
   destination:
-    server: <https://kubernetes.default.svc>
+    server: https://kubernetes.default.svc
     namespace: web2-prod
   syncPolicy:
     automated:
