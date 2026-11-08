@@ -18,3 +18,6 @@ patches:
       - op: replace
         path: /spec/rules/0/host
         value: web2-prod.localhost
+images:
+  - name: ghcr.io/thinking-always/web2-app
+    newTag: 승격할커밋해시
