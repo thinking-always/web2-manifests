@@ -20,4 +20,4 @@ patches:
         value: web2-prod.localhost
 images:
   - name: ghcr.io/thinking-always/web2-app
-    newTag: "8763c3d81f4d21d64bb4272b5db8c324236a4111"
+    newTag: "988b959d178641220be74bc89985dc24422bd42e"
