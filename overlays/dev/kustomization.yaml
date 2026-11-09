@@ -14,4 +14,4 @@ patches:
 images:
 - name: ghcr.io/thinking-always/web2-app
   newName: ghcr.io/thinking-always/web2-app
-  newTag: 988b959d178641220be74bc89985dc24422bd42e
+  newTag: 660af2cb6180e62907fa91c0859ff2e9676f6a26
