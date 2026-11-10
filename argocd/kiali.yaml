@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: <https://kiali.org/helm-charts>
+    repoURL: https://kiali.org/helm-charts
     chart: kiali-server
     targetRevision: "*"
     helm:
